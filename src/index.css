@@ -142,3 +142,41 @@
     background: linear-gradient(135deg, hsl(var(--traffic)) 0%, #a855f7 100%);
   }
 }
+
+/* Animated Background Slideshow */
+@keyframes backgroundSlideshow {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  animation: backgroundSlideshow 20s infinite;
+}
+
+.hero-background:nth-child(1) {
+  background-image: url("https://cdn.poehali.dev/files/12f21963-1435-4a79-904d-42ec3a7eafde.jpg");
+  animation-delay: 0s;
+}
+
+.hero-background:nth-child(2) {
+  background-image: url("https://cdn.poehali.dev/files/cf9a79e2-8e18-4d7c-ab7b-808748be589c.png");
+  animation-delay: 10s;
+}

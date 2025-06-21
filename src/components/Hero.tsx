@@ -3,7 +3,13 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative bg-black overflow-hidden">
+    <section className="relative overflow-hidden min-h-screen">
+      {/* Animated Background Slideshow */}
+      <div className="hero-background"></div>
+      <div className="hero-background"></div>
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10"></div>
 
       <div className="container mx-auto px-4 py-20 relative">
