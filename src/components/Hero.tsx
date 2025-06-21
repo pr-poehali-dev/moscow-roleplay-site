@@ -29,21 +29,33 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            <a
+              href="https://www.roblox.com/games/2534724415/Emergency-Response-Liberty-County"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Icon name="Play" size={20} className="mr-2" />
-              Играть сейчас
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-8 py-4 text-lg font-semibold transition-all duration-300"
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Icon name="Play" size={20} className="mr-2" />
+                Играть сейчас
+              </Button>
+            </a>
+            <a
+              href="https://www.roblox.com/communities/35543060/Moscow-RolePlay-ER-LC#!/about"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Icon name="Users" size={20} className="mr-2" />
-              Наше сообщество
-            </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-8 py-4 text-lg font-semibold transition-all duration-300"
+              >
+                <Icon name="Users" size={20} className="mr-2" />
+                Наше сообщество
+              </Button>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
