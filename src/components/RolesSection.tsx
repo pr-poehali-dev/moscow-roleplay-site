@@ -69,13 +69,13 @@ const RolesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-4xl md:text-5xl mb-6 text-gray-900">
+          <h2 className="font-montserrat font-bold text-4xl md:text-5xl mb-6 text-white">
             Выбери свою роль
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Каждая профессия открывает уникальные возможности и игровой опыт.
             Стань тем, кем всегда мечтал быть!
           </p>
@@ -85,7 +85,7 @@ const RolesSection = () => {
           {roles.map((role, index) => (
             <Card
               key={role.title}
-              className="group hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in border-0 shadow-lg overflow-hidden"
+              className="group hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in border-0 shadow-lg overflow-hidden bg-gray-800"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader className="relative">
@@ -101,10 +101,10 @@ const RolesSection = () => {
                     className="text-white"
                   />
                 </div>
-                <CardTitle className="font-montserrat font-bold text-2xl text-gray-900 relative">
+                <CardTitle className="font-montserrat font-bold text-2xl text-white relative">
                   {role.title}
                 </CardTitle>
-                <CardDescription className="text-gray-600 text-base relative">
+                <CardDescription className="text-gray-300 text-base relative">
                   {role.description}
                 </CardDescription>
               </CardHeader>
@@ -113,12 +113,12 @@ const RolesSection = () => {
                   {role.features.map((feature, idx) => (
                     <li
                       key={idx}
-                      className="flex items-center space-x-2 text-gray-700"
+                      className="flex items-center space-x-2 text-gray-300"
                     >
                       <Icon
                         name="Check"
                         size={16}
-                        className="text-green-500 flex-shrink-0"
+                        className="text-green-400 flex-shrink-0"
                       />
                       <span>{feature}</span>
                     </li>

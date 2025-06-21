@@ -13,14 +13,14 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50">
+    <nav className="bg-black/90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
               <Icon name="Gamepad2" size={20} className="text-white" />
             </div>
-            <span className="font-montserrat font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="font-montserrat font-bold text-xl bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
               Moscow RP
             </span>
           </Link>
@@ -32,8 +32,8 @@ const Navigation = () => {
                 to={item.path}
                 className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-200 ${
                   location.pathname === item.path
-                    ? "bg-primary/10 text-primary"
-                    : "text-gray-600 hover:text-primary hover:bg-primary/5"
+                    ? "bg-green-500/20 text-green-400"
+                    : "text-gray-300 hover:text-green-400 hover:bg-green-500/10"
                 }`}
               >
                 <Icon name={item.icon as any} size={18} />
@@ -43,7 +43,7 @@ const Navigation = () => {
           </div>
 
           <div className="md:hidden">
-            <button className="p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-primary/5">
+            <button className="p-2 rounded-lg text-gray-300 hover:text-green-400 hover:bg-green-500/10">
               <Icon name="Menu" size={24} />
             </button>
           </div>
